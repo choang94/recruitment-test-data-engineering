@@ -1,4 +1,4 @@
-# Technical assessment for data engineering candidates 
+# Technical assessment for data engineering candidates
 
 ## Purpose
 
@@ -112,4 +112,25 @@ To tidy up, bringing down all the containers and deleting them.
 
 ```
 docker compose down
+```
+
+### Steps to run `codetest-python` (by Chau Hoang):
+1. Build the docker image
+```
+docker compose build codetest-python
+```
+
+2. Build the database image
+```
+docker compose build database
+```
+
+3. Start the database
+```
+docker compose up database
+```
+
+4. Run the docker image
+```
+docker compose run codetest-python
 ```
