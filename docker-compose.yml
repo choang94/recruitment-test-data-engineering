@@ -57,3 +57,10 @@ services:
     command: ["swift", "run"]
     volumes:
       - ./data:/data
+
+  codetest-python:
+    image: codetest-python
+    build: images/codetest-python
+    command: ["./main.py"]
+    volumes:
+      - ./data:/data
